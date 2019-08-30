@@ -5,7 +5,7 @@ class Node:
 
 def printLL(head):
     while(head != None):
-        print(head.val)
+        print(head.val, end =" ")
         head = head.next
 
 def LLtoStack(list):
@@ -70,6 +70,8 @@ def additionOfLL(node1, node2):
             carry = 0
         ansList.append(sum)
         node2 = node2.next
+    if (carry == 1):
+        ansList.append(carry)
     #if(carry == 1):
 
     return ansList
@@ -91,17 +93,25 @@ node13.next = node14
 node21 = Node(9)
 node22 = Node(7)
 node23 = Node(2)
-node24 = Node(5)
+#node24 = Node(5)
 
 node21.next = node22
 node22.next = node23
-node23.next = node24
+#node23.next = node24
 
 print(LLtoStack(node11))
+#printLL(StacktoLL(LLtoStack(node11)))
+print("List 1")
 head1 = StacktoLL(LLtoStack(node11))
+printLL(head1)
 
+print("List 2")
 head2 = StacktoLL(LLtoStack(node21))
+printLL(head2)
+#
+sum = additionOfLL(head1, head2)
+print(sum)
+sumHead = StacktoLL(sum)
 
-sum = additionOfLL(node11, node21)
-
-print("Sum of two LL is: ", sum)
+print("Sum of two LL is: ")
+printLL(sumHead)
