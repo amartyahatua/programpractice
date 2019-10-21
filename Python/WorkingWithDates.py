@@ -28,3 +28,24 @@ print(difference.days)
 
 currentdate = datetime.datetime.now()
 print(currentdate.minute)
+
+
+## Question##
+## Ask a user to enter the deadline of a project and tell how many days remaining
+## Answer them in weeks and days
+
+todayDate = datetime.datetime.today()
+deadLineFromUser = input("Enter the deadline (mm/dd/YYYY)")
+deadline = datetime.datetime.strptime(deadLineFromUser,'%m/%d/%Y')
+
+diff = deadline - todayDate
+
+print("The dead line is", diff.days )
+
+days = int(diff.days)
+
+weeks = int(days/7)
+daysremaining = days%7
+
+print("Number of weeks",weeks)
+print("Number of days", daysremaining)
