@@ -33,3 +33,15 @@ salary = int(salary)
 bonus = int(bonus)
 paycheckamaout = salary + bonus
 print(paycheckamaout)
+
+
+## Loan claculator
+
+monthly_payment = 0
+loan_amount = 5000
+interst = 0.05
+number_of_payment = 60
+
+monthly_payment = loan_amount*(interst*(1+interst)*number_of_payment) / ((1+interst)*number_of_payment - 1)
+
+print(monthly_payment)
