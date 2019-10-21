@@ -35,3 +35,32 @@ print("In python we can print \ in a line")
 
 print("But what if I want \news")
 print("But what if I want \\news")
+
+## Write a program that will display the following poem
+# There once was a movie star icon
+# who performed to sleep with the light on
+# They learned how to code
+# a device that sure glowed
+# and lit up the night using Python!
+
+#Sol 1:
+print("===========SOLUTION 1=================")
+print("There once was a movie star icon")
+print("who performed to sleep with the light on")
+print("They learned how to code")
+print("a device that sure glowed")
+print("and lit up the night using Python!")
+
+
+#Sol 2:
+print("===========SOLUTION 2=================")
+print("There once was a movie star icon \nwho performed to sleep with the light on \nThey learned how to code \na device that sure glowed \nand lit up the night using Python!")
+
+
+#Sol 3:
+print("===========SOLUTION 3=================")
+print("""There once was a movie star icon
+who performed to sleep with the light on
+They learned how to code
+a device that sure glowed
+and lit up the night using Python!""")
