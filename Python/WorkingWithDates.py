@@ -25,3 +25,6 @@ print(birthday)
 currentdate = datetime.datetime.today()
 difference =  currentdate - birthday
 print(difference.days)
+
+currentdate = datetime.datetime.now()
+print(currentdate.minute)
