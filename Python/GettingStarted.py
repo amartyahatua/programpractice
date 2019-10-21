@@ -29,3 +29,9 @@ print("Hellow how are you? \nIt is raining today.")
 print("""Hello 
 how are you? 
 I am in Mississippi""")
+print("In python we can print \ in a line")
+
+## I am inserting a  \\ so the \ appears correctly
+
+print("But what if I want \news")
+print("But what if I want \\news")
