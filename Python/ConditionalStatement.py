@@ -49,3 +49,22 @@ if(deposite > 100):
 
 if(freeToaster):
     print("Enjoy free toaster")
+
+
+#########Question###############
+
+shoppingCost = input("How is the total cost? \n")
+shoppingCost = int(shoppingCost)
+
+totalcost = 0
+
+if(shoppingCost < 50):
+    totalcost = shoppingCost + 10
+else:
+    totalcost = shoppingCost
+
+print("Total cost is $%d"%totalcost)
+
+
+
+
