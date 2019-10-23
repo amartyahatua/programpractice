@@ -130,3 +130,32 @@ print(teamIsCorrect)
 
 if sportsIsHockey and teamIsCorrect:
     print("Good luck for the cup")
+
+
+############ Question ##############
+
+country = input("Enter the name of your country  \n").lower()
+init_price = input("Enter the price")
+init_price = int(init_price)
+final_price = 0.0
+
+if country == 'canada':
+    province = input("Enter the name of the province \n").lower()
+
+    if province == 'alberta':
+        gst = init_price*0.05
+        final_price = gst + init_price
+    elif province == 'ontario' or province == 'new brunswick' or province == 'nova scotia':
+        harmonized_sales_tax = init_price*0.13
+        final_price = init_price + harmonized_sales_tax
+    else:
+        provincial_tax = 0.06*init_price
+        gst = 0.05*init_price
+        final_price = init_price+provincial_tax+gst
+else:
+    final_price=init_price
+
+print("The final price is %f" %final_price)
+
+
+
