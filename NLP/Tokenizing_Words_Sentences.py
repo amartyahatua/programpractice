@@ -41,3 +41,11 @@ ps = PorterStemmer()
 example_words = ['python', 'pythoner', 'pythoning', 'pythoned', 'pythonly']
 for w in example_words:
     print(ps.stem(w))
+
+
+## POS Tagging ##
+
+from nltk import  pos_tag
+sentence = "I was taking a ride in the car"
+print(pos_tag(sentence))
+
