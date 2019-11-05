@@ -49,3 +49,14 @@ from nltk import  pos_tag
 sentence = "I was taking a ride in the car"
 print(pos_tag(sentence))
 
+
+## Lemmatizing ##
+
+from nltk.stem import WordNetLemmatizer
+
+example_words = ['cats', 'cacti', 'geese', 'rocks', 'python']
+
+lemmatizer = WordNetLemmatizer()
+for word in example_words:
+    print(lemmatizer.lemmatize(word))
+print(lemmatizer.lemmatize("better", pos='a'))
